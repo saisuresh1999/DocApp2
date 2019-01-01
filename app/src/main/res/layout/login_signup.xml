@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:id="@+id/rl"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:layout_margin="30dp"
+        android:src="@drawable/doctor_checkup_logo" />
+
+    <EditText
+        android:id="@+id/un"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:padding="10dp"
+
+        android:layout_margin="15dp"
+        android:inputType="textPersonName"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/pw"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:id="@+id/MainButton"
+        android:onClick="signUp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or, Login"
+        android:id="@+id/changeSignupmodeTextview"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#0000FF"/>
+
+
+</LinearLayout>
